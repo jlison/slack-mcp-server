@@ -7,7 +7,7 @@
 >
 > If you know a **Hiring Manager, Engineering Manager, or startup team** that might be a good fit, I’d be grateful for an introduction.
 >
-> 👉 See the full context in **[this issue](https://github.com/korotovsky/slack-mcp-server/issues/150)**  
+> 👉 See the full context in **[this issue](https://github.com/jlison/slack-mcp-server/issues/150)**  
 > 📩 Contact: `dmitry@korotovsky.io`
 
 Open up your Slack in your browser and login.

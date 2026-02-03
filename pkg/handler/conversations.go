@@ -14,9 +14,9 @@ import (
 	"time"
 
 	"github.com/gocarina/gocsv"
-	"github.com/korotovsky/slack-mcp-server/pkg/provider"
-	"github.com/korotovsky/slack-mcp-server/pkg/server/auth"
-	"github.com/korotovsky/slack-mcp-server/pkg/text"
+	"github.com/jlison/slack-mcp-server/pkg/provider"
+	"github.com/jlison/slack-mcp-server/pkg/server/auth"
+	"github.com/jlison/slack-mcp-server/pkg/text"
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/slack-go/slack"
 	slackGoUtil "github.com/takara2314/slack-go-util"
@@ -41,20 +41,20 @@ var validFilterKeys = map[string]struct{}{
 }
 
 type Message struct {
-	MsgID     string `json:"msgID"`
-	UserID    string `json:"userID"`
-	UserName  string `json:"userUser"`
-	RealName  string `json:"realName"`
-	Channel   string `json:"channelID"`
-	ThreadTs  string `json:"ThreadTs"`
-	Text      string `json:"text"`
-	Time      string `json:"time"`
-	Reactions string `json:"reactions,omitempty"`
-	BotName   string `json:"botName,omitempty"`
-	FileCount int    `json:"fileCount,omitempty"`
-	AttachmentIDs   string `json:"attachmentIDs,omitempty"`
-	HasMedia  bool   `json:"hasMedia,omitempty"`
-	Cursor    string `json:"cursor"`
+	MsgID         string `json:"msgID"`
+	UserID        string `json:"userID"`
+	UserName      string `json:"userUser"`
+	RealName      string `json:"realName"`
+	Channel       string `json:"channelID"`
+	ThreadTs      string `json:"ThreadTs"`
+	Text          string `json:"text"`
+	Time          string `json:"time"`
+	Reactions     string `json:"reactions,omitempty"`
+	BotName       string `json:"botName,omitempty"`
+	FileCount     int    `json:"fileCount,omitempty"`
+	AttachmentIDs string `json:"attachmentIDs,omitempty"`
+	HasMedia      bool   `json:"hasMedia,omitempty"`
+	Cursor        string `json:"cursor"`
 }
 
 type User struct {
@@ -602,19 +602,19 @@ func (ch *ConversationsHandler) convertMessagesFromHistory(slackMessages []slack
 		attachmentIDsStr := strings.Join(attachmentIDs, ",")
 
 		messages = append(messages, Message{
-			MsgID:     msg.Timestamp,
-			UserID:    msg.User,
-			UserName:  userName,
-			RealName:  realName,
-			Text:      text.ProcessText(msgText),
-			Channel:   channel,
-			ThreadTs:  msg.ThreadTimestamp,
-			Time:      timestamp,
-			Reactions: reactionsString,
-			BotName:   botName,
-			FileCount: fileCount,
-			AttachmentIDs:   attachmentIDsStr,
-			HasMedia:  hasMedia,
+			MsgID:         msg.Timestamp,
+			UserID:        msg.User,
+			UserName:      userName,
+			RealName:      realName,
+			Text:          text.ProcessText(msgText),
+			Channel:       channel,
+			ThreadTs:      msg.ThreadTimestamp,
+			Time:          timestamp,
+			Reactions:     reactionsString,
+			BotName:       botName,
+			FileCount:     fileCount,
+			AttachmentIDs: attachmentIDsStr,
+			HasMedia:      hasMedia,
 		})
 	}
 

@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/korotovsky/slack-mcp-server"
+    "url": "https://github.com/jlison/slack-mcp-server"
   },
-  "homepage": "https://github.com/korotovsky/slack-mcp-server",
-  "documentation": "https://github.com/korotovsky/slack-mcp-server?tab=readme-ov-file#slack-mcp-server",
-  "support": "https://github.com/korotovsky/slack-mcp-server/issues/new",
+  "homepage": "https://github.com/jlison/slack-mcp-server",
+  "documentation": "https://github.com/jlison/slack-mcp-server?tab=readme-ov-file#slack-mcp-server",
+  "support": "https://github.com/jlison/slack-mcp-server/issues/new",
   "icon": "icon.png",
   "screenshots": [],
   "server": {
@@ -60,21 +60,21 @@
     "xoxc_token": {
       "type": "string",
       "title": "Value for xoxc-... token",
-      "description": "The xoxc-... token for Slack MCP Server. This token is used to authenticate the server with Slack's API. Please see https://github.com/korotovsky/slack-mcp-server/blob/master/docs/01-authentication-setup.md#lookup-slack_mcp_xoxc_token info on how to obtain it.",
+      "description": "The xoxc-... token for Slack MCP Server. This token is used to authenticate the server with Slack's API. Please see https://github.com/jlison/slack-mcp-server/blob/master/docs/01-authentication-setup.md#lookup-slack_mcp_xoxc_token info on how to obtain it.",
       "sensitive": true,
       "required": false
     },
     "xoxd_token": {
       "type": "string",
       "title": "Value for xoxd-... token",
-      "description": "The xoxd-... token for Slack MCP Server. This token is used to authenticate the server with Slack's API. Please see https://github.com/korotovsky/slack-mcp-server/blob/master/docs/01-authentication-setup.md#lookup-slack_mcp_xoxd_token info on how to obtain it.",
+      "description": "The xoxd-... token for Slack MCP Server. This token is used to authenticate the server with Slack's API. Please see https://github.com/jlison/slack-mcp-server/blob/master/docs/01-authentication-setup.md#lookup-slack_mcp_xoxd_token info on how to obtain it.",
       "sensitive": true,
       "required": false
     },
     "xoxp_token": {
       "type": "string",
       "title": "Value for xoxp token",
-      "description": "The xoxp token for Slack MCP Server. IMPORTANT: Use it only when you don't use xoxc/xoxd pair. This token is used to authenticate the server with Slack's API using OAuth2. Please see https://github.com/korotovsky/slack-mcp-server/blob/master/docs/01-authentication-setup.md#alternative-using-slack_mcp_xoxp_token-user-oauth info on how to obtain it.",
+      "description": "The xoxp token for Slack MCP Server. IMPORTANT: Use it only when you don't use xoxc/xoxd pair. This token is used to authenticate the server with Slack's API using OAuth2. Please see https://github.com/jlison/slack-mcp-server/blob/master/docs/01-authentication-setup.md#alternative-using-slack_mcp_xoxp_token-user-oauth info on how to obtain it.",
       "sensitive": true,
       "required": false
     },

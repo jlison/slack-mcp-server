@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/korotovsky/slack-mcp-server.git"
+    "url": "git+https://github.com/jlison/slack-mcp-server.git"
   },
   "keywords": [
     "mcp",
@@ -33,7 +33,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/korotovsky/slack-mcp-server/issues"
+    "url": "https://github.com/jlison/slack-mcp-server/issues"
   },
-  "homepage": "https://github.com/korotovsky/slack-mcp-server#readme"
+  "homepage": "https://github.com/jlison/slack-mcp-server#readme"
 }

@@ -8,7 +8,7 @@ import (
 	"runtime/trace"
 
 	"github.com/google/uuid"
-	"github.com/korotovsky/slack-mcp-server/pkg/limiter"
+	"github.com/jlison/slack-mcp-server/pkg/limiter"
 	"github.com/rusq/slack"
 )
 
